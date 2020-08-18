@@ -1,257 +1,35 @@
-html,
-body {
-	color: #434242;
-	font-family: "Caveat", cursive, sans-serif !important;
-	height: 100%;
-}
 
-body {
-	background: #F3EFE0;
-	font-size: 15px;
-	line-height: 1.64;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-strong,
-b {
-	font-family: "Caveat", cursive, sans-serif !important;
-	margin-bottom: 20px;
-}
-
-h1,
-h4 {
-	font-weight: 700;
-	margin-bottom: 10px;
-}
-
-h2,
-h3 {
-	font-weight: 300;
-	color: #D69BD1;
-}
-
-h2 {
-	font-size: 54px;
-	text-align: center;
-}
-
-h3 {
-	font-size: 28px;
+.Intro{
+  background-image: url(/images/indeximg.jpg);
 }
 
 
-hr {
-	margin: 40px 0px;
-	border-color: #727878;
-	opacity: 0.2;
-	filter: alpha(opacity=20);
+#profile img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width:768px){
+  .navbar {
+    display: none;
+  }
 }
 
 
-
-
-.jumbotron {
-	background: no-repeat center right fixed url(img/indeximg.jpg);
-
-	-webkit-background-size: 100%;
-	-moz-background-size: 100%;
-	-o-background-size: 100%;
-	background-size: 100%;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');
-
-	margin-bottom: 0px;
-	padding: 0px;
+.navbar-right{
+  position: fixed;
+  right:50px;
+  top:300px;
 }
-
-
-
-.jumbotron .container {
-	position: relative;
-	top: 28%;
-	z-index: 4;
-	text-align: center;
+@media screen and (min-width:768px){
+  .navbar-right {
+    display: none;
+  }
 }
-
-.jumbotron .container>* {
-	text-align: center;
-	color: #FFFFFF;
+.navbar-right .list li{
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border: 1px solid white;
 }
-
-.jumbotron .container h1 {
-	color: #0bf09cf3;
-}
-
-.jumbotron .container .lead {
-	font-size: 28px;
-}
-
-
-.navbar {
-	border: 0px;
-	background-color: #222222;
-	position: absolute;
-	top: 100%;
-	right: 5%;
-	width: 110px;
-	z-index: 999;
-}
-
-.navbar .navbar-collapse {
-	padding: 0px;
-	max-height: none;
-}
-
-.navbar .navbar-nav {
-	float: none;
-}
-
-.navbar-nav {
-	margin: 0px;
-}
-
-.navbar .nav>li {
-	display: block;
-	float: none;
-	height: 80px;
-}
-
-.navbar .nav>li a {
-	display: block;
-	height: 80px;
-	text-align: center;
-	padding-top: 30px;
-	font-weight: 600;
-	color: #FFFFFF;
-}
-
-.navbar .nav>li a:hover,
-.navbar .nav>li a:focus {
-	color: #999999;
-}
-
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
-	background: #D69BD1;
-	color: #FFFFFF;
-}
-
-.navbar-default .navbar-toggle:hover .icon-bar,
-.navbar-default .navbar-toggle:focus .icon-bar {
-	background: #222222;
-}
-
-.fixed .navbar {
-	position: fixed;
-	top: 120px;
-}
-
-.background-white {
-	background: #FFFFFF;
-}
-
-
-
-.container {
-	max-width: 1280px;
-	padding: 40px 180px;
-}
-
-#profile .row>div {
-	margin-bottom: 20px;
-}
-
-#profile .row>div img {
-	width: 100%;
-	max-width: 246px;
-	height: auto;
-	border-radius: 50%;
-}
-
-
-@media (max-width: 767px) {
-	.jumbotron:before {
-		bottom: 100px;
-		left: 20px;
-		right: 20px;
-		top: 20px;
-	}
-
-	.jumbotron .container {
-		top: 20%;
-		padding-top: 0px;
-	}
-
-	.jumbotron .scroll-down {
-		width: 100%;
-		right: 0px;
-	}
-
-	.navbar {
-		left: 0px;
-		width: 100%;
-	}
-
-	.navbar .nav>li {
-		height: 60px;
-	}
-
-	.navbar .nav>li a {
-		height: 60px;
-		text-align: center;
-		padding-top: 20px;
-		font-weight: 600;
-		color: #FFFFFF;
-	}
-
-	.fixed .navbar {
-		top: 0px;
-	}
-
-	.container {
-		padding: 60px 20px;
-		min-width: 280px;
-	}
-
-
-@media only screen and (orientation: portrait) and (max-width: 767px) {
-	.jumbotron {
-		-webkit-background-size: auto 150%;
-		background-attachment: fixed;
-	}
-}
-
-
-@keyframes wiggle {
-	0% {
-		padding-top: 20px;
-	}
-
-	50% {
-		padding-top: 28px;
-	}
-
-	100% {
-		padding-top: 20px;
-	}
-}
-
-
